@@ -1,0 +1,2 @@
+docker run -d -p 80:80 --network jenkins-network --name nginx --mount type=bind,source=$(pwd)/nginx.conf,target=/etc/nginx/nginx.conf nginx
+docker run -d --network jenkins-network --name flask-app flask-app:latest
